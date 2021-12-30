@@ -13,13 +13,18 @@
 
   <h1>SEND MESSAGE</h1>
   <div class="border"></div>
-  <form class="contact-form" action="https://formsubmit.co/saikumar02819@gmail.com" method="POST">
-    <input type="text" class="contact-form-text" placeholder="Your name">
-    <input type="email" class="contact-form-text" placeholder="Your email">
-    <input type="text" class="contact-form-text" placeholder="Your phone">
+  <form class="contact-form" action="POST" data-netlify="true">
+    <input type="text" class="contact-form-text" placeholder="Your name" name="name">
+    <input type="email" class="contact-form-text" placeholder="Your email" name="email">
+    <input type="text" class="contact-form-text" placeholder="Your phone" name="Phone number">
     <textarea class="contact-form-text" placeholder="Your message"></textarea>
 	<input type="hidden" name="_next" value="https://msaikumar007.blogspot.com">
     <input type="submit" class="contact-form-btn" value="Send">
+	  <div>
+				<div  
+					data-netlify-recaptcha="true">
+				</div>
+			  </div>
   </form>
 </div>
 
